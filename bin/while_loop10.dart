@@ -21,5 +21,5 @@ String func( int a ){
   return s2;
 }
 void main() {
-  print(func(8));
+  print(func(9));
 }
