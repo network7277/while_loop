@@ -5,7 +5,7 @@
 
 int func( int a ){
   int s = 0;
-  int i = 1;
+  int i = 0;
   while ( i <= a ){
     i++;
     if ( i % 2 == 1 ){
@@ -16,5 +16,5 @@ int func( int a ){
 }
 
 void main() {
-  print(func(12));
+  print(func(11));
 }
