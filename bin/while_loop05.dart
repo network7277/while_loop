@@ -4,7 +4,7 @@
 */
 int func( int a ){
   int odd_sum = 0, even_sum = 0;
-  int i = 1;
+  int i = 0;
   while ( i <= a ){
     i ++;
     if ( i % 2 == 1 ){
