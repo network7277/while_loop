@@ -1,26 +1,26 @@
-/*
-  Create function func with "a " argument
-  Return the larger of the odd and even numbers up to 'a', whichever is greater
-*/
 int func( int a ){
-   int s_toq = 0;
-   int s_juft = 0;
-   int i = 0;
-   while ( i <= a ){
-    if ( a % 2 == 1 ){
+  int s = 0;
+  if ( a % 2 == 1 ){
+   
+    int i = 0;
+    while ( i <= a ){
       if ( i % 2 == 1 ){
-        s_toq += i;
+        s += i;
       }
-    }else{
-      if ( i % 2 == 0 ){
-        s_juft += i;
-      }
+      i ++;
     }
-    i ++;
-   }
-   return s_juft;
-   return s_toq;
+  }else{
+
+    int i = 0;
+    while ( i <= a ){
+      if ( i % 2 == 0 ){
+        s += i;
+      }
+      i ++;
+    }
+  }
+  return s;
 }
-void main() {
-  print(func(10));
+void main(){
+  print(func(3));
 }
